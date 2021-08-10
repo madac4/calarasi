@@ -5,10 +5,18 @@
     align-items: flex-end;
     padding-bottom: 90px;
     margin-bottom: 75px;
+    &.center {
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        h1 {
+            margin: 0 auto;
+        }
+    }
     h1 {
         font-weight: 500;
         max-width: 800px;
-        font-size: 68px;
+        @include adaptiv-value('font-size', 68, 32, 1);
         line-height: 135%;
         color: #ffffff;
     }

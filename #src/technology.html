@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calarasi - Performance</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.0/swiper-bundle.min.css" integrity="sha512-hSeEAanQ2Sh6YpHdLthlagf8R8v081TtNJX4oCxNXxwIAGOHKdzOnl270Dxrn/WHZRdwowpumZEwS16WjIi2Hw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+    @@include('components/header-white.html')
+
+    <main>
+        @@include('components/pageTitle.html', {
+            "title":"We look after our plantations with the utmost care", 
+            "image":"title-image.jpg",
+        })
+
+        <div class="horizontal-wrapper">
+            <div class="horizontal-wrapper__menu">
+                <ul class="menu-list">
+                    <li class="menu-list__item active"><a href="#" class="menu-list__link">Plantatii</a></li>
+                    <li class="menu-list__item"><a href="#" class="menu-list__link">Distilare</a></li>
+                    <li class="menu-list__item"><a href="#" class="menu-list__link">Maturare</a></li>
+                    <li class="menu-list__item"><a href="#" class="menu-list__link">Cupajare</a></li>
+                    <li class="menu-list__item"><a href="#" class="menu-list__link">Odihna</a></li>
+                    <li class="menu-list__item"><a href="#" class="menu-list__link">Turnarea in sticle</a></li>
+                </ul>
+            </div>
+            <div class="horizontal-content">
+                <div class="cos">
+                    <div class="horizontal-content__hero" style="background: url('img/plantatii.jpg') 50% 50% / cover no-repeat;">
+                        <h2>Plantatii</h2>
+                    </div>
+                    <div class="horizontal-content__hero" style="background: url('img/plantatii.jpg') 50% 50% / cover no-repeat;">
+                        <h2>Plantatii</h2>
+                    </div>
+                    <div class="horizontal-content__hero" style="background: url('img/plantatii.jpg') 50% 50% / cover no-repeat;">
+                        <h2>Plantatii</h2>
+                    </div>
+                    <div class="horizontal-content__hero" style="background: url('img/plantatii.jpg') 50% 50% / cover no-repeat;">
+                        <h2>Plantatii</h2>
+                    </div>
+                    <div class="horizontal-content__hero" style="background: url('img/plantatii.jpg') 50% 50% / cover no-repeat;">
+                        <h2>Plantatii</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    @@include('components/footer.html')
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -37,7 +37,15 @@ if(document.querySelector('.header')){
                 header.classList.remove('fixed')
                 main.style.marginTop = `0px`
             }
-            
+        }
+
+        const horizontalWrapper = document.querySelector('.horizontal-wrapper');
+        if(horizontalWrapper){
+            const wrapperPosition = horizontalWrapper.offsetTop
+            if (scrollPos + headerH >= wrapperPosition) {
+                header.classList.remove('fixed')
+                main.style.marginTop = `0px`
+            }
         }
     })
 
@@ -47,4 +55,10 @@ if(document.querySelector('.header')){
         document.body.classList.toggle('lock');
     })
 }
+
+
+
+
+
+
 

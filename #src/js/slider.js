@@ -162,3 +162,37 @@ if(document.querySelector('.slider-awards__body')){
     })
 }
 
+if(document.querySelector('.slider-gallery__body')){
+    new Swiper('.slider-gallery__body', {
+        observer: true,
+        observeParents: true,
+        preloadImages: false,
+        draggable: true,
+        loop: true,
+        navigation:{
+            nextEl: '.slider-gallery-controls__arrows .slider-arrow__next',
+            prevEl: '.slider-gallery-controls__arrows .slider-arrow__prev',
+        },
+        breakpoints: {
+            320: {
+                centeredSlides: true,
+                slidesPerView: 1,
+            },
+            480: {
+                slidesPerView: 2,
+            },
+            767: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+            1110: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+            },
+            // 1480: {
+            //     slidesPerView: 5,
+            // },
+        },
+    })
+}
+
