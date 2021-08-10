@@ -1,8 +1,21 @@
 @import 'mixin';
 @import 'fonts';
 @import 'normalize';
+@import 'ui';
 @import 'media';
+
+@import 'home';
+@import 'about';
+@import 'blog';
+@import 'collection';
+@import 'contact';
+@import 'performance';
+@import 'performance-single';
+@import 'technology';
+@import 'single';
+
 @import './components/header.scss';
 @import './components/footer.scss';
 @import './components/pageTitle.scss';
-@import 'home';
+@import './components/gallerySlider.scss';
+@import './components/awards.scss';

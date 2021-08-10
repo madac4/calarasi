@@ -15,7 +15,6 @@ $md3: 767.98;
 $md4: 479.98;
 // CONTAINER
 
-// Global Commands
 *,
 *::after,
 *::before {
@@ -84,52 +83,3 @@ button {
     background-color: transparent;
     border: none;
 }
-
-h1 {
-}
-h2 {
-    font-weight: 800;
-    font-size: 28px;
-    line-height: 37px;
-}
-h3 {
-    font-weight: 800;
-    font-size: 26px;
-    line-height: 36px;
-}
-h4 {
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 31px;
-}
-h5 {
-    font-weight: 800;
-    font-size: 22px;
-    line-height: 30px;
-}
-h6 {
-}
-p,
-a {
-    font-size: 16px;
-    line-height: 23px;
-}
-small {
-    font-weight: 800;
-    font-size: 10px;
-    line-height: 14px;
-    color: #514d4a;
-    text-transform: uppercase;
-    position: relative;
-    &::after {
-        content: '';
-        position: absolute;
-        bottom: -2px;
-        left: 0;
-        display: block;
-        width: 110%;
-        height: 1px;
-        background-color: $darkcolor;
-    }
-}
-// Global Commands
