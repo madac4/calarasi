@@ -1,6 +1,5 @@
 .horizontal-wrapper {
     margin-top: -75px;
-    height: 100vh;
     &__menu {
         padding: 40px 0;
         padding-left: 100px;
@@ -28,37 +27,91 @@
             }
         }
     }
-    .horizontal-content {
-        .cos {
-            display: flex;
-            align-items: center;
-            width: 100%;
-            max-height: 100%;
-        }
-        &__hero {
-            padding: 5px;
-            min-width: 100%;
-            height: 88vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            h2 {
-                font-weight: 800;
-                font-size: 68px;
-                line-height: 93px;
-
-                color: #ffffff;
-
-                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            }
-        }
-    }
-}
-
-.wrapper {
-    height: 100%;
-    #main-content {
-        display: flex;
-        align-items: center;
-    }
+    // .page__horizontal-slider {
+    //     .horizontal-slider__body {
+    //         .horizontal-slider__slider {
+    //             .slider-horizontal__body {
+    //                 display: flex;
+    //                 align-items: center;
+    //                 .slider-horizontal__slide {
+    //                     display: flex;
+    //                     align-items: center;
+    //                     height: 900px;
+    //                     .slider-horizontal__image {
+    //                         min-width: 100%;
+    //                         height: 900px;
+    //                         display: flex;
+    //                         align-items: center;
+    //                         justify-content: center;
+    //                         h2 {
+    //                             font-size: 68px;
+    //                             color: #FFFFFF;
+    //                             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    //                         }
+    //                     }
+    //                     .text {
+    //                         min-width: 200px;
+    //                         position: relative;
+    //                     }
+    //                     .slider-horizontal__content {
+    //                         margin-left: 150px;
+    //                         height: 100%;
+    //                         gap: 200px;
+    //                         display: flex;
+    //                         align-items: center;
+    //                         .horizontal-content__item {
+    //                             &.horizontal-item {
+    //                                 flex-direction: row;
+    //                                 img {
+    //                                     height: 615px;
+    //                                 }
+    //                                 .horizontal-content__text {
+    //                                     min-width: 75%;
+    //                                     max-width: 316px;
+    //                                     transform: translateY(0) translateX(-150px);
+    //                                     margin-bottom: 0;
+    //                                     h4 {
+    //                                         font-size: 28px;
+    //                                         color: #000000;
+    //                                         margin-bottom: 15px;
+    //                                     }
+    //                                     p {
+    //                                         color: #000000;
+    //                                         &:not(:last-child) {
+    //                                             margin-bottom: 5px;
+    //                                         }
+    //                                     }
+    //                                 }
+    //                             }
+    //                             img {
+    //                                 width: 550px;
+    //                                 height: 400px;
+    //                                 object-fit: cover;
+    //                             }
+    //                             .horizontal-content__text {
+    //                                 background-color: #F8F8F8;
+    //                                 padding: 30px 15px 35px 15px;
+    //                                 max-width: 90%;
+    //                                 margin: 0 auto;
+    //                                 transform: translateY(-100px);
+    //                                 margin-bottom: -100px;
+    //                                 h4 {
+    //                                     font-size: 28px;
+    //                                     color: #000000;
+    //                                     margin-bottom: 15px;
+    //                                 }
+    //                                 p {
+    //                                     color: #000000;
+    //                                     &:not(:last-child) {
+    //                                         margin-bottom: 5px;
+    //                                     }
+    //                                 }
+    //                             }
+    //                         }
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
 }

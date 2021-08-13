@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calarasi - Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+    @@include('components/header-white.html')
+
+    <main>
+        @@include('components/pageTitle.html', { "title":"Find out about our newest updates", "image":"title-image.jpg", })
+
+        <section class="blog-section">
+            <div class="container">
+                <div class="blog-section__header section-header">
+                    <h2>Blog</h2>
+                </div>
+                <div class="blog-section__grid">
+                    <div class="blog-section__item blog-item">
+                        <img src="img/post1.jpg" alt="post" class="blog-item__thumbnail">
+                        <div class="blog-item__text">
+                            <h3 class="blog-item__title">Lorem ipsum dolor asamet</h3>
+                            <p class="blog-item__excerpt">Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum...</p>
+                            <div class="blog-item__meta">
+                                <span class="blog-item__time">22 Iulie 2021</span>
+                                <a href="#" class="blog-item__permalink">Citeste mai mult</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-section__item blog-item">
+                        <img src="img/post2.jpg" alt="post" class="blog-item__thumbnail">
+                        <div class="blog-item__text">
+                            <h3 class="blog-item__title">Lorem ipsum dolor asamet</h3>
+                            <p class="blog-item__excerpt">Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum...</p>
+                            <div class="blog-item__meta">
+                                <span class="blog-item__time">22 Iulie 2021</span>
+                                <a href="#" class="blog-item__permalink">Citeste mai mult</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-section__item blog-item">
+                        <img src="img/post2.jpg" alt="post" class="blog-item__thumbnail">
+                        <div class="blog-item__text">
+                            <h3 class="blog-item__title">Lorem ipsum dolor asamet</h3>
+                            <p class="blog-item__excerpt">Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum...</p>
+                            <div class="blog-item__meta">
+                                <span class="blog-item__time">22 Iulie 2021</span>
+                                <a href="#" class="blog-item__permalink">Citeste mai mult</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-section__item blog-item">
+                        <img src="img/post1.jpg" alt="post" class="blog-item__thumbnail">
+                        <div class="blog-item__text">
+                            <h3 class="blog-item__title">Lorem ipsum dolor asamet</h3>
+                            <p class="blog-item__excerpt">Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum...</p>
+                            <div class="blog-item__meta">
+                                <span class="blog-item__time">22 Iulie 2021</span>
+                                <a href="#" class="blog-item__permalink">Citeste mai mult</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagination">
+                    <div class="container">
+                        <ul class="pagination-list">
+                            <li class="pagination-list__item prev">
+                                <a href="#">
+                                    <svg width="25" height="25" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0)">
+                                            <path d="M18.0778 21L19.3816 19.9084L8.21749 10.5L19.3816 1.09155L18.0778 -9.5742e-08L5.6185 10.5L18.0778 21Z" fill="#423831"/>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0">
+                                                <rect width="25" height="21" fill="white" transform="translate(25 21) rotate(-180)"/>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="pagination-list__item active">
+                                <a href="#">1</a>
+                            </li>
+                            <li class="pagination-list__item">
+                                <a href="#">2</a>
+                            </li>
+                            <li class="pagination-list__item">
+                                <a href="#">3</a>
+                            </li>
+                            <li class="pagination-list__item">
+                                <a href="#">4</a>
+                            </li>
+                            <li class="pagination-list__item">
+                                <a href="#">5</a>
+                            </li>
+                            <li class="pagination-list__item next">
+                                <a href="#">
+                                    <svg width="25" height="25" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0)">
+                                            <path d="M18.0778 21L19.3816 19.9084L8.21749 10.5L19.3816 1.09155L18.0778 -9.5742e-08L5.6185 10.5L18.0778 21Z" fill="#423831"/>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0">
+                                                <rect width="25" height="21" fill="white" transform="translate(25 21) rotate(-180)"/>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    @@include('components/footer.html')
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

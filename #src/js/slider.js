@@ -1,13 +1,13 @@
 let sliders = document.querySelectorAll('.swiper');
-if(sliders){
+if (sliders) {
     for (let index = 0; index < sliders.length; index++) {
         let slider = sliders[index];
-        if(!slider.classList.contains('swiper-bild')){
+        if (!slider.classList.contains('swiper-bild')) {
             let slider_items = slider.children;
-            if(slider_items){
+            if (slider_items) {
                 for (let index = 0; index < slider_items.length; index++) {
                     let el = slider_items[index];
-                    el.classList.add('swiper-slide');                 
+                    el.classList.add('swiper-slide');
                 }
             }
             let slider_content = slider.innerHTML;
@@ -18,13 +18,13 @@ if(sliders){
             slider.appendChild(slider_wrapper);
             slider.classList.add('swiper-bild');
 
-            if(slider.classList.contains('swiper_scroll')){
+            if (slider.classList.contains('swiper_scroll')) {
                 let sliderScroll = document.createElement('div');
                 sliderScroll.classList.add('swiper-scrollbar');
                 slider.appendChild(sliderScroll);
             }
         }
-        if(slider.classList.contains('gallery')){
+        if (slider.classList.contains('gallery')) {
             // slider.data('lightGallery').destroy(true);
         }
     }
@@ -34,7 +34,7 @@ if(sliders){
 function sliders_bild_callback(params) {}
 
 let sliderScollItems = document.querySelectorAll('.swiper-scroll');
-if(sliderScollItems.length > 0){
+if (sliderScollItems.length > 0) {
     for (let index = 0; index < sliderScollItems.length; index++) {
         const sliderScrollItem = sliderScollItems[index];
         const sliderScrollBar = sliderScrollItem.querySelector('.swiper-scrollbar');
@@ -44,7 +44,7 @@ if(sliderScollItems.length > 0){
             direction: 'vertical',
             slidesPerView: 'auto',
             freeMode: true,
-            scrollbar:{
+            scrollbar: {
                 el: sliderScrollBar,
                 draggable: true,
                 snapOnRelease: false,
@@ -61,7 +61,7 @@ if(sliderScollItems.length > 0){
 function sliders_bild_callback(params) {}
 
 
-if(document.querySelector('.slider-main__body')){
+if (document.querySelector('.slider-main__body')) {
     new Swiper('.slider-main__body', {
         // effect: 'fade',
         observer: true,
@@ -76,11 +76,11 @@ if(document.querySelector('.slider-main__body')){
             el: '.slider-main-controls__dots',
             clickable: true,
         },
-        navigation:{
+        navigation: {
             nextEl: '.slider-main-controls__arrows .slider-arrow__next',
             prevEl: '.slider-main-controls__arrows .slider-arrow__prev',
         },
-        autoplay:{
+        autoplay: {
             delay: 3000,
             disableOnInteraction: false,
         },
@@ -105,7 +105,7 @@ if(document.querySelector('.slider-main__body')){
         // },
     })
 }
-if(document.querySelector('.slider-collection__body')){
+if (document.querySelector('.slider-collection__body')) {
     new Swiper('.slider-collection__body', {
         // effect: 'fade',
         observer: true,
@@ -115,7 +115,7 @@ if(document.querySelector('.slider-collection__body')){
         loop: true,
         speed: 800,
         preloadImages: false,
-        navigation:{
+        navigation: {
             nextEl: '.slider-collection-controls__arrows .slider-arrow__next',
             prevEl: '.slider-collection-controls__arrows .slider-arrow__prev',
         },
@@ -133,14 +133,14 @@ if(document.querySelector('.slider-collection__body')){
     })
 }
 
-if(document.querySelector('.slider-awards__body')){
+if (document.querySelector('.slider-awards__body')) {
     new Swiper('.slider-awards__body', {
         // effect: 'fade',
         observer: true,
         observeParents: true,
         loop: true,
         preloadImages: false,
-        navigation:{
+        navigation: {
             nextEl: '.slider-awards-controls__arrows .slider-arrow__next',
             prevEl: '.slider-awards-controls__arrows .slider-arrow__prev',
         },
@@ -162,13 +162,13 @@ if(document.querySelector('.slider-awards__body')){
     })
 }
 
-if(document.querySelector('.slider-gallery__body')){
+if (document.querySelector('.slider-gallery__body')) {
     new Swiper('.slider-gallery__body', {
         observer: true,
         observeParents: true,
         preloadImages: false,
         draggable: true,
-        navigation:{
+        navigation: {
             nextEl: '.slider-gallery-controls__arrows .slider-arrow__next',
             prevEl: '.slider-gallery-controls__arrows .slider-arrow__prev',
         },
@@ -195,7 +195,7 @@ if(document.querySelector('.slider-gallery__body')){
     })
 }
 
-if(document.querySelector('.slider-history__body')){
+if (document.querySelector('.slider-history__body')) {
     new Swiper('.slider-history__body', {
         observer: true,
         observeParents: true,
@@ -206,7 +206,7 @@ if(document.querySelector('.slider-history__body')){
         slidesPerView: 4,
         centeredSlides: true,
         freeMode: true,
-        navigation:{
+        navigation: {
             nextEl: '.slider-history-controls__arrows .slider-arrow__next',
         },
         breakpoints: {
@@ -227,12 +227,34 @@ if(document.querySelector('.slider-history__body')){
             },
             1110: {
                 slidesPerView: 4,
-                spaceBetween: 0,
             },
-            // 1480: {
-            //     slidesPerView: 5,
-            // },
+        },
+    })
+}
+if (document.querySelector('.slider-product__body')) {
+    new Swiper('.slider-product__body', {
+        observer: true,
+        observeParents: true,
+        preloadImages: false,
+        speed: 1200,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: '.slider-product-controls__arrows .slider-arrow__next',
+            prevEl: '.slider-product-controls__arrows .slider-arrow__prev',
         },
     })
 }
 
+
+if (document.querySelector('.slider-horizontal__body')) {
+    new Swiper('.slider-horizontal__body', {
+        observer: true,
+        observeParents: true,
+        preloadImages: false,
+        speed: 1200,
+        slidesPerView: "auto",
+        mousewheel: true,
+        freeMode: true,
+        spaceBetween: 100,
+    })
+}
