@@ -68,3 +68,132 @@ small {
         max-width: 730px;
     }
 }
+
+.brown-btn {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 60px;
+    background-color: #423831;
+    box-sizing: border-box;
+    border-radius: 2px;
+    font-family: inherit;
+    font-size: 18px;
+    padding: 19px 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    transition: background-color 0.3s;
+    &:hover {
+        background-color: lighten($color: #423831, $amount: 8);
+    }
+}
+
+input,
+textarea {
+    width: 100%;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #d7d7d7;
+    padding: 10px 0;
+    outline: none;
+    font-family: inherit;
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #423831;
+    transition: border-bottom 0.3s;
+    &:focus {
+        border-bottom: 1px solid $darkcolor;
+    }
+    &::placeholder {
+        font-family: inherit;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #989898;
+    }
+}
+
+textarea {
+    resize: none;
+}
+
+.choices {
+    .choices__inner {
+        padding: 10px;
+    }
+    &.is-open {
+        &::after {
+            transform: rotate(-180deg) translate(-20px, -25px);
+        }
+    }
+    &::after {
+        content: url(../img/choice.svg) !important;
+        border: none;
+        right: 30px !important;
+        top: 30% !important;
+        border-style: none !important;
+        border-color: transparent !important;
+    }
+    .choices__inner {
+        border: none;
+        border-bottom: 1px solid #d7d7d7 !important;
+        background: none;
+        padding-left: 0;
+    }
+}
+
+.col-1 {
+    grid-column: 2 span;
+}
+
+.checkbox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    &:not(:last-child) {
+        margin-bottom: 15px;
+    }
+    .checkbox__input {
+        position: relative;
+        input {
+            position: absolute;
+            opacity: 0;
+            z-index: -1;
+            width: 1em;
+            height: 1em;
+            &:checked + .checkbox__control svg {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        .checkbox__control {
+            width: 20px;
+            height: 20px;
+            border: 1px solid #ededed;
+            border-radius: 1px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg {
+                opacity: 0;
+                visibility: hidden;
+                transform: translateY(1px);
+                transition: opacity 0.1s ease-in 25ms, visibility 0.1s ease-in 25ms;
+            }
+        }
+    }
+    .radio__label {
+        flex: 1;
+        font-size: 14px;
+    }
+}
