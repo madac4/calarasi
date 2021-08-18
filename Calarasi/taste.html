@@ -96,7 +96,7 @@
 
 
             </div>
-            <div class="taste-form" style="background:url(img/taste-background.jpg) 50% 50%/ cover no-repeat; width: 100%; height: 567px;margin-top: 144px;">
+            <div class="taste-form" style="background:url(img/taste-form.jpg) 50% 50%/ cover no-repeat; width: 100%; height: 567px;margin-top: 144px;">
                 <div class="container">
                     <h2 class="page-title center">Participa la o degustare</h2>
                     <form class="taste-form__body" action="#">
@@ -112,26 +112,16 @@
                             E-mail
                             <input class="form-body__input" type="email" placeholder="johndoe@example.com">
                         </label>
-                        <label class="form-body__lable">
-                            Birthdate
-                            <select class="form-body__select" id="choice-year">
-                                <option class="form-body__option" value="">year</option>
-                                <option class="form-body__option" value="">1</option>
-                                <option class="form-body__option" value="">1</option>
-                                <option class="form-body__option" value="">1</option>
-                            </select>
-                            <select class="form-body__select" id="choice-month">
-                                <option class="form-body__option" value="">month</option>
-                                <option class="form-body__option" value="">2</option>
-                                <option class="form-body__option" value="">2</option>
-                                <option class="form-body__option" value="">2</option>
-                            </select>
-                            <select class="form-body__select" id="choice-day">
-                                <option class="form-body__option" value="">day</option>
-                                <option class="form-body__option" value="">3</option>
-                                <option class="form-body__option" value="">3</option>
-                            </select>
-                        </label>
+                        <div class="choice-selector">
+                            <label class="form-body__lable" for="selector">Birthdate</label>
+                            <input class="choice-value" type="text" value="" placeholder="Year" id="selector">
+                            <ul class="choice-list">
+                                <li class="choice-item">2003</li>
+                                <li class="choice-item">2002</li>
+                                <li class="choice-item">2001</li>
+                                <li class="choice-item">2000</li>
+                            </ul>
+                        </div>
                         <label class="form-body__lable">
                             Phone number
                             <input class="form-body__input" type="tel" value="+373">
