@@ -93,67 +93,176 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
-            <div class="taste-form" style="background:url(img/taste-form.jpg) 50% 50%/ cover no-repeat; width: 100%; height: 567px;margin-top: 144px;">
-                <div class="container">
-                    <h2 class="page-title center">Participa la o degustare</h2>
-                    <form class="taste-form__body" action="#">
-                        <label class="form-body__lable">
-                            First name
-                            <input  class="form-body__input" type="text" placeholder="Type your name">
-                        </label>
-                        <label class="form-body__lable">
-                            Last name
-                            <input  class="form-body__input" type="text" placeholder="Type your name">
-                        </label>
-                        <label class="form-body__lable col-1">
-                            E-mail
-                            <input class="form-body__input" type="email" placeholder="johndoe@example.com">
-                        </label>
-                        <div class="choice-selector">
-                            <label class="form-body__lable" for="selector">Birthdate</label>
-                            <input class="choice-value" type="text" value="" placeholder="Year" id="selector">
-                            <ul class="choice-list">
-                                <li class="choice-item">2003</li>
-                                <li class="choice-item">2002</li>
-                                <li class="choice-item">2001</li>
-                                <li class="choice-item">2000</li>
-                            </ul>
-                        </div>
-                        <label class="form-body__lable">
-                            Phone number
-                            <input class="form-body__input" type="tel" value="+373">
-                        </label>
-                        <label class="form-body__lable">
-                            NR. of people
-                            <input class="form-body__input" type="text" placeholder="How many friends you want to bring">
-                        </label>
-                        <label class="form-body__lable">
-                            EVENT
-                            <input class="form-body__input" type="text" placeholder="Select the convenient event for you">
-                        </label>
-                        <label class="checkbox col-1">
-                            <span class="checkbox__input">
-                                <input type="checkbox" name="checkbox">
-                                <span class="checkbox__control">
-                                    <svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.773438 4.81818L3.35076 8L9.02086 1" stroke="#423831" stroke-linecap="round"/>
-                                    </svg>
-                                </span>
-                            </span>
-                            <span class="radio__label">I would like to be contacted about an unnarranged tasting</span>
-                        </label>
-                        <button class="brown-btn col-1">
-                            sent
-                        </button>
-                    </form>
+        </div>
+
+        <div class="taste-form__header" style="background:url(img/taste-form.jpg) 50% 50%/ cover no-repeat;">
+            <h2 class="page-title center">Participa la o degustare</h2>
+        </div>
+
+        <div class="taste-form__body">
+            <form class="taste-form" action="#">
+                <label class="form-body__lable">
+                        First name
+                        <input  class="form-body__input" type="text" placeholder="Type your name">
+                    </label>
+                <label class="form-body__lable">
+                        Last name
+                        <input  class="form-body__input" type="text" placeholder="Type your name">
+                    </label>
+                <label class="form-body__lable col-2">
+                        E-mail
+                        <input class="form-body__input" type="email" placeholder="johndoe@example.com">
+                    </label>
+                <div class="choice-selector">
+                    <label class="form-body__lable" for="selector">Birthdate</label>
+                    <div class="choice-selector__block">
+                        <input class="choice-value__year choice-value" autocomplete="off" type="" value="" placeholder="Year" id="selector">
+                        <ul class="choice-list__year choice-list">
+                            <li class="choice-item">2003</li>
+                            <li class="choice-item">2002</li>
+                            <li class="choice-item">2001</li>
+                            <li class="choice-item">2000</li>
+                        </ul>
+                    </div>
+                    <div class="choice-selector__block">
+                        <input class="choice-value__month choice-value" autocomplete="off" type="" value="" placeholder="Month" id="selector">
+                        <ul class="choice-list__month choice-list">
+                            <li class="choice-item">Ianuarie</li>
+                            <li class="choice-item">Februarie</li>
+                            <li class="choice-item">Martie</li>
+                            <li class="choice-item">Aprilie</li>
+                        </ul>
+                    </div>
+                    <div class="choice-selector__block">
+                        <input class="choice-value__date choice-value" autocomplete="off" type="" value="" placeholder="Date" id="selector">
+                        <ul class="choice-list__date choice-list">
+                            <li class="choice-item">01</li>
+                            <li class="choice-item">02</li>
+                            <li class="choice-item">03</li>
+                            <li class="choice-item">04</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
+                <label class="form-body__lable">
+                        Phone number
+                        <input class="form-body__input" type="tel" value="+373">
+                    </label>
+                <label class="form-body__lable">
+                        NR. of people
+                        <input class="form-body__input" type="text" placeholder="How many friends you want to bring">
+                    </label>
+                <label class="form-body__lable">
+                        EVENT
+                        <input class="form-body__input" type="text" placeholder="Select the convenient event for you">
+                    </label>
+                <label class="checkbox col-2">
+                        <span class="checkbox__input">
+                            <input type="checkbox" name="checkbox">
+                            <span class="checkbox__control">
+                                <svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.773438 4.81818L3.35076 8L9.02086 1" stroke="#423831" stroke-linecap="round"/>
+                                </svg>
+                            </span>
+                        </span>
+                        <span class="radio__label">I would like to be contacted about an unnarranged tasting</span>
+                    </label>
+                <button class="brown-btn col-2">
+                        sent
+                    </button>
+            </form>
         </div>
     </main>
 
+    <footer class="footer" data-aos="fade-up" data-aos-duration="2000">
+    <div class="container footer__container">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h5>Produse</h5>
+                <ul class="footer-list">
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">Divin</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">Brandy</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">Bautura alcoolica tare</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">Rachiu de vin</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">Vin perlante</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">Decorativ</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">Cutie suvenir</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">Pocale</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">Catalogul produselor</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h5>Tehnologia</h5>
+                <ul class="footer-list">
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">Plantatii</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">Distilare</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">Maturare</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">Cupajare</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">Odihna</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">Turnare in sticle</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-logo">
+                <a href="/">
+                    <img src="img/footer-logo.png" alt="logo-dark">
+                </a>
+            </div>
+
+            <div class="footer-column">
+                <h5>Produse</h5>
+                <ul class="footer-list">
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">Divin</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">Brandy</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">Bautura alcoolica tare</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">Rachiu de vin</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">Vin perlante</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">Decorativ</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">Cutie suvenir</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">Pocale</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">Catalogul produselor</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h5>Tehnologia</h5>
+                <ul class="footer-list">
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">Plantatii</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">Distilare</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">Maturare</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">Cupajare</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">Odihna</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">Turnare in sticle</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-socials">
+            <div class="social-block">
+                <a href="#">
+                    <img src="img/fb.svg" alt="facebook">
+                </a>
+                <a href="#">
+                    <img src="img/tw.svg" alt="twitter">
+                </a>
+                <a href="#">
+                    <img src="img/ig.svg" alt="instagram">
+                </a>
+                <a href="#">
+                    <img src="img/yt.svg" alt="youtube">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-copyright">
+        <p>© 2021 Călărași-Divin</p>
+    </div>
+</footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js"></script>
 </body>
 
