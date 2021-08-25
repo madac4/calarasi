@@ -201,6 +201,9 @@ if (inputFieldDate) {
     });
 }
 
+
+
+
 const multiChoices = () => {
     const block = document.querySelector('.choice-selector__block')
     block.forEach(el =>{

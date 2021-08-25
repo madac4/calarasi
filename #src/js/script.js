@@ -55,3 +55,22 @@ if (document.querySelector('.header')) {
 
 
 AOS.init();
+
+
+
+document.addEventListener('DOMContentLoaded', () =>{
+    const modalSubmit = document.querySelector('#check-modal')
+    const overlay = document.querySelector('.overlay');
+    const modal = document.querySelector('.modal');
+    modal.classList.add('open');
+    overlay.classList.add('open')
+    document.body.classList.add('lock')
+
+    modalSubmit.addEventListener('click', () =>{
+        modal.classList.remove('open')
+        overlay.classList.remove('open')
+        document.body.classList.remove('lock')
+    })
+})
+
+
