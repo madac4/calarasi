@@ -31,7 +31,13 @@ body {
     &.lock {
         overflow: hidden;
     }
+
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 .wrapper {
     width: 100%;
     min-height: 100%;

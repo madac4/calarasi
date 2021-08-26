@@ -27,91 +27,68 @@
             }
         }
     }
-    // .page__horizontal-slider {
-    //     .horizontal-slider__body {
-    //         .horizontal-slider__slider {
-    //             .slider-horizontal__body {
-    //                 display: flex;
-    //                 align-items: center;
-    //                 .slider-horizontal__slide {
-    //                     display: flex;
-    //                     align-items: center;
-    //                     height: 900px;
-    //                     .slider-horizontal__image {
-    //                         min-width: 100%;
-    //                         height: 900px;
-    //                         display: flex;
-    //                         align-items: center;
-    //                         justify-content: center;
-    //                         h2 {
-    //                             font-size: 68px;
-    //                             color: #FFFFFF;
-    //                             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    //                         }
-    //                     }
-    //                     .text {
-    //                         min-width: 200px;
-    //                         position: relative;
-    //                     }
-    //                     .slider-horizontal__content {
-    //                         margin-left: 150px;
-    //                         height: 100%;
-    //                         gap: 200px;
-    //                         display: flex;
-    //                         align-items: center;
-    //                         .horizontal-content__item {
-    //                             &.horizontal-item {
-    //                                 flex-direction: row;
-    //                                 img {
-    //                                     height: 615px;
-    //                                 }
-    //                                 .horizontal-content__text {
-    //                                     min-width: 75%;
-    //                                     max-width: 316px;
-    //                                     transform: translateY(0) translateX(-150px);
-    //                                     margin-bottom: 0;
-    //                                     h4 {
-    //                                         font-size: 28px;
-    //                                         color: #000000;
-    //                                         margin-bottom: 15px;
-    //                                     }
-    //                                     p {
-    //                                         color: #000000;
-    //                                         &:not(:last-child) {
-    //                                             margin-bottom: 5px;
-    //                                         }
-    //                                     }
-    //                                 }
-    //                             }
-    //                             img {
-    //                                 width: 550px;
-    //                                 height: 400px;
-    //                                 object-fit: cover;
-    //                             }
-    //                             .horizontal-content__text {
-    //                                 background-color: #F8F8F8;
-    //                                 padding: 30px 15px 35px 15px;
-    //                                 max-width: 90%;
-    //                                 margin: 0 auto;
-    //                                 transform: translateY(-100px);
-    //                                 margin-bottom: -100px;
-    //                                 h4 {
-    //                                     font-size: 28px;
-    //                                     color: #000000;
-    //                                     margin-bottom: 15px;
-    //                                 }
-    //                                 p {
-    //                                     color: #000000;
-    //                                     &:not(:last-child) {
-    //                                         margin-bottom: 5px;
-    //                                     }
-    //                                 }
-    //                             }
-    //                         }
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
+   &.sticky{
+    position: sticky;
+    z-index: 10000;
+    top: 0px;
+    background-color: #fff;
+   }
+}
+
+.technology-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    widows: 100%;
+    height: 900px;
+    h2 {
+        font-size: 68px;
+        line-height: 93px;
+        color: #FFFFFF;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.technology-posts {
+    max-width: 1300px;
+    margin: 150px auto;
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column: 2 span;
+        grid-gap: 200px 150px;
+        place-items: center;
+        .technology-post {
+            &:nth-child(3n + 0) {
+                width: 80%;
+                grid-column: 2 span;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .technology-post__content {
+                    transform: translateX(-150px);
+                    margin-right: -150px;
+                }
+            }
+            img {
+                width: 100%;
+            }
+            &__content {
+                width: 95%;
+                margin: 0 auto;
+                background-color: #F8F8F8;
+                padding: 30px 17px;
+                transform: translateY(-100px);
+                margin-bottom: -100px;
+                h3 {
+                    font-weight: 800;
+                    color: #000000;
+                    margin-bottom: 10px;
+                }
+                p {
+                    color: #000000;
+                }
+            }
+        }
+    }
 }

@@ -199,7 +199,7 @@
     }
     .news-posts {
         display: grid;
-        grid-gap: 65px 30px;
+        grid-gap: 0 30px;
         grid-template-columns: repeat(2, 1fr);
         .post-item {
             width: 100%;
@@ -220,6 +220,7 @@
             }
             &:nth-child(2n) {
                 transform: translateY(65px);
+                margin-bottom: 65px;
             }
             .post-thumbnail {
                 width: 100%;
@@ -352,6 +353,7 @@
 }
 
 .modal {
+    display: none;
     width: 550px;
     height: 400px;
     background-color: #F5EEDB;

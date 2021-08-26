@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <header class="header white">
+    <header class="header white" id="header">
     <div class="header__container">
         <div class="header__logo">
             <a href="/">
@@ -27,11 +27,11 @@
         <nav class="navbar">
             <ul class="navbar__menu">
                 <li class="menu__item active"><a href="../about.html" class="menu__link">Despre Noi</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Tehnologie</a></li>
+                <li class="menu__item"><a href="../technology.html" class="menu__link">Tehnologie</a></li>
                 <li class="menu__item"><a href="../performance.html" class="menu__link">Performanta</a></li>
                 <li class="menu__item"><a href="../blog.html" class="menu__link">Noutati</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Produse</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Degustare</a></li>
+                <li class="menu__item"><a href="../product-single.html" class="menu__link">Produse</a></li>
+                <li class="menu__item"><a href="../taste.html" class="menu__link">Degustare</a></li>
                 <li class="menu__item"><a href="../contact.html" class="menu__link">Contacte</a></li>
             </ul>
         </nav>
@@ -67,114 +67,290 @@
         <div class="horizontal-wrapper">
             <div class="horizontal-wrapper__menu">
                 <ul class="menu-list">
-                    <li class="menu-list__item active"><a href="#" class="menu-list__link">Plantatii</a></li>
-                    <li class="menu-list__item"><a href="#" class="menu-list__link">Distilare</a></li>
-                    <li class="menu-list__item"><a href="#" class="menu-list__link">Maturare</a></li>
-                    <li class="menu-list__item"><a href="#" class="menu-list__link">Cupajare</a></li>
-                    <li class="menu-list__item"><a href="#" class="menu-list__link">Odihna</a></li>
-                    <li class="menu-list__item"><a href="#" class="menu-list__link">Turnarea in sticle</a></li>
+                    <li class="menu-list__item active"><a href="#plantatii" class="menu-list__link">Plantatii</a></li>
+                    <li class="menu-list__item"><a href="#distilare" class="menu-list__link">Distilare</a></li>
+                    <li class="menu-list__item"><a href="#maturare" class="menu-list__link">Maturare</a></li>
+                    <li class="menu-list__item"><a href="#cupajare" class="menu-list__link">Cupajare</a></li>
+                    <li class="menu-list__item"><a href="#odihna" class="menu-list__link">Odihna</a></li>
+                    <li class="menu-list__item"><a href="#turnarea" class="menu-list__link">Turnarea in sticle</a></li>
                 </ul>
             </div>
-
-            <!-- <div class="page__horizontal-slider horizontal-slider">
-                <div class="horizontal-slider__body">
-                    <div class="horizontal-slider__slider">
-                        <div class="slider-horizontal__body swiper">
-                            <div class="slider-horizontal__slide">
-                                <div class="slider-horizontal__image" style="background: url('img/plantatii.jpg') 50% 50% / cover no-repeat;">
-                                    <h2>Plantatii</h2>
-                                </div>
-                            </div>
-
-                            <div class="slider-horizontal__slide">
-                                <div class="slider-horizontal__content horizontal-content">
-                                    <div class="horizontal-content__item">
-                                        <img src="img/horizontal-item1.jpg" alt="item">
-                                        <div class="horizontal-content__text">
-                                            <h4>Lorem ipsum dolor</h4>
-                                            <p>
-                                                Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor. Nulla Lorem mollit cupidatat irure. Laborum
-                                            </p>
-                                            <p>
-                                                magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="horizontal-content__item">
-                                        <img src="img/horizontal-item1.jpg" alt="item">
-                                        <div class="horizontal-content__text">
-                                            <h4>Lorem ipsum dolor</h4>
-                                            <p>
-                                                Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor. Nulla Lorem mollit cupidatat irure. Laborum
-                                                magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="horizontal-content__item horizontal-item">
-                                        <img src="img/horizontal-item1.jpg" alt="item">
-                                        <div class="horizontal-content__text">
-                                            <h4>Lorem ipsum dolor</h4>
-                                            <p>
-                                                Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor. Nulla Lorem mollit cupidatat irure. Laborum
-                                            </p>
-                                            <p>
-                                                magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="slider-horizontal__slide">
-                                <div class="slider-horizontal__image" style="background: url('img/plantatii.jpg') 50% 50% / cover no-repeat;">
-                                    <h2>Distilare</h2>
-                                </div>
-                            </div>
-
-                            <div class="slider-horizontal__slide">
-                                <div class="slider-horizontal__content horizontal-content">
-                                    <div class="horizontal-content__item">
-                                        <img src="img/horizontal-item1.jpg" alt="item">
-                                        <div class="horizontal-content__text">
-                                            <h4>Lorem ipsum dolor</h4>
-                                            <p>
-                                                Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor. Nulla Lorem mollit cupidatat irure. Laborum
-                                            </p>
-                                            <p>
-                                                magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="horizontal-content__item">
-                                        <img src="img/horizontal-item1.jpg" alt="item">
-                                        <div class="horizontal-content__text">
-                                            <h4>Lorem ipsum dolor</h4>
-                                            <p>
-                                                Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor. Nulla Lorem mollit cupidatat irure. Laborum
-                                                magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="horizontal-content__item horizontal-item">
-                                        <img src="img/horizontal-item1.jpg" alt="item">
-                                        <div class="horizontal-content__text">
-                                            <h4>Lorem ipsum dolor</h4>
-                                            <p>
-                                                Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor. Nulla Lorem mollit cupidatat irure. Laborum
-                                            </p>
-                                            <p>
-                                                magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+        </div>
+        <div class="technology-main">
+            <div class="technology-title" id="plantatii" style="background: url('/img/plantatii.jpg') 50% 50% / cover no-repeat;">
+                <h2>
+                    Plantații
+                </h2>
+            </div>
+            <div class="technology-posts">
+                <div class="technology-posts__grid">
+                    <div class="technology-post">
+                        <img src="img/tec-post1.jpg" alt="">
+                        <div class="technology-post__content">
+                            <h3>Lorem ipsum dolor</h3>
+                            <p>
+                                Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor. Nulla Lorem mollit cupidatat irure. Laborum
+                                magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="technology-post">
+                        <img src="img/tec-post2.jpg" alt="">
+                        <div class="technology-post__content">
+                            <h3>Lorem ipsum dolor</h3>
+                            <p>
+                                Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor. Nulla Lorem mollit cupidatat irure. Laborum
+                                magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="technology-post">
+                        <img src="img/tec-post3.jpg" alt="">
+                        <div class="technology-post__content">
+                            <h3>Lorem ipsum dolor</h3>
+                            <p>
+                                Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor. Nulla Lorem mollit cupidatat irure. Laborum
+                                magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor.
+                            </p>
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
+            <div class="technology-title" id="distilare" style="background: url('/img/tec-post-header1.jpg') 50% 50% / cover no-repeat;">
+                <h2>
+                    Distilare
+                </h2>
+            </div>
+            <div class="technology-posts">
+                <div class="technology-posts__grid">
+                    <div class="technology-post">
+                        <img src="img/tec-post1.jpg" alt="">
+                        <div class="technology-post__content">
+                            <h3>Lorem ipsum dolor</h3>
+                            <p>
+                                Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor. Nulla Lorem mollit cupidatat irure. Laborum
+                                magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="technology-post">
+                        <img src="img/tec-post5.jpg" alt="">
+                        <div class="technology-post__content">
+                            <h3>Lorem ipsum dolor</h3>
+                            <p>
+                                Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor. Nulla Lorem mollit cupidatat irure. Laborum
+                                magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="technology-post">
+                        <img src="img/tec-post6.jpg" alt="">
+                        <div class="technology-post__content">
+                            <h3>Lorem ipsum dolor</h3>
+                            <p>
+                                Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor. Nulla Lorem mollit cupidatat irure. Laborum
+                                magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="technology-title" id="maturare" style="background: url('/img/tec-post-header2.jpg') 50% 50% / cover no-repeat;">
+                <h2>
+                    Maturare    
+                </h2>
+            </div>
+            <div class="technology-posts">
+                <div class="technology-posts__grid">
+                    <div class="technology-post">
+                        <img src="img/tec-post1.jpg" alt="">
+                        <div class="technology-post__content">
+                            <h3>Lorem ipsum dolor</h3>
+                            <p>
+                                Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor. Nulla Lorem mollit cupidatat irure. Laborum
+                                magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="technology-post">
+                        <img src="img/tec-post5.jpg" alt="">
+                        <div class="technology-post__content">
+                            <h3>Lorem ipsum dolor</h3>
+                            <p>
+                                Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor. Nulla Lorem mollit cupidatat irure. Laborum
+                                magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="technology-post">
+                        <img src="img/tec-post-big1.jpg" alt="">
+                        <div class="technology-post__content">
+                            <h3>Lorem ipsum dolor</h3>
+                            <p>
+                                Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor. Nulla Lorem mollit cupidatat irure. Laborum
+                                magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="technology-title" id="cupajare" style="background: url('/img/tec-post-header3.jpg') 50% 50% / cover no-repeat;">
+                <h2>
+                    Cupajare
+                </h2>
+            </div>
+            <div class="technology-posts">
+                <div class="technology-posts__grid">
+                    <div class="technology-post">
+                        <img src="img/tec-post1.jpg" alt="">
+                        <div class="technology-post__content">
+                            <h3>Lorem ipsum dolor</h3>
+                            <p>
+                                Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor. Nulla Lorem mollit cupidatat irure. Laborum
+                                magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="technology-post">
+                        <img src="img/tec-post2.jpg" alt="">
+                        <div class="technology-post__content">
+                            <h3>Lorem ipsum dolor</h3>
+                            <p>
+                                Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor. Nulla Lorem mollit cupidatat irure. Laborum
+                                magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="technology-post">
+                        <img src="img/tec-post3.jpg" alt="">
+                        <div class="technology-post__content">
+                            <h3>Lorem ipsum dolor</h3>
+                            <p>
+                                Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor. Nulla Lorem mollit cupidatat irure. Laborum
+                                magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="technology-title" id="odihna" style="background: url('/img/tec-post-header4.jpg') 50% 50% / cover no-repeat;">
+                <h2>
+                    Odihna
+                </h2>
+            </div>
+            <div class="technology-posts">
+                <div class="technology-posts__grid">
+                    <div class="technology-post">
+                        <img src="img/tec-post1.jpg" alt="">
+                        <div class="technology-post__content">
+                            <h3>Lorem ipsum dolor</h3>
+                            <p>
+                                Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor. Nulla Lorem mollit cupidatat irure. Laborum
+                                magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="technology-post">
+                        <img src="img/tec-post2.jpg" alt="">
+                        <div class="technology-post__content">
+                            <h3>Lorem ipsum dolor</h3>
+                            <p>
+                                Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor. Nulla Lorem mollit cupidatat irure. Laborum
+                                magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="technology-post">
+                        <img src="img/tec-post3.jpg" alt="">
+                        <div class="technology-post__content">
+                            <h3>Lorem ipsum dolor</h3>
+                            <p>
+                                Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor. Nulla Lorem mollit cupidatat irure. Laborum
+                                magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="technology-title" id="distilare" style="background: url('/img/tec-post-header4.jpg') 50% 50% / cover no-repeat;">
+                <h2>
+                    Distilare
+                </h2>
+            </div>
+            <div class="technology-posts">
+                <div class="technology-posts__grid">
+                    <div class="technology-post">
+                        <img src="img/tec-post1.jpg" alt="">
+                        <div class="technology-post__content">
+                            <h3>Lorem ipsum dolor</h3>
+                            <p>
+                                Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor. Nulla Lorem mollit cupidatat irure. Laborum
+                                magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="technology-post">
+                        <img src="img/tec-post2.jpg" alt="">
+                        <div class="technology-post__content">
+                            <h3>Lorem ipsum dolor</h3>
+                            <p>
+                                Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor. Nulla Lorem mollit cupidatat irure. Laborum
+                                magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="technology-post">
+                        <img src="img/tec-post3.jpg" alt="">
+                        <div class="technology-post__content">
+                            <h3>Lorem ipsum dolor</h3>
+                            <p>
+                                Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor. Nulla Lorem mollit cupidatat irure. Laborum
+                                magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="technology-title" id="turnarea" style="background: url('/img/tec-post-header1.jpg') 50% 50% / cover no-repeat;">
+                <h2>
+                    Turnarea in sticle
+                </h2>
+            </div>
+            <div class="technology-posts">
+                <div class="technology-posts__grid">
+                    <div class="technology-post">
+                        <img src="img/tec-post1.jpg" alt="">
+                        <div class="technology-post__content">
+                            <h3>Lorem ipsum dolor</h3>
+                            <p>
+                                Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor. Nulla Lorem mollit cupidatat irure. Laborum
+                                magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="technology-post">
+                        <img src="img/tec-post2.jpg" alt="">
+                        <div class="technology-post__content">
+                            <h3>Lorem ipsum dolor</h3>
+                            <p>
+                                Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor. Nulla Lorem mollit cupidatat irure. Laborum
+                                magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="technology-post">
+                        <img src="img/tec-post3.jpg" alt="">
+                        <div class="technology-post__content">
+                            <h3>Lorem ipsum dolor</h3>
+                            <p>
+                                Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor. Nulla Lorem mollit cupidatat irure. Laborum
+                                magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Laborum magna nulla duis ullamco cillum dolor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </main>
 
     <footer class="footer" data-aos="fade-up" data-aos-duration="2000">

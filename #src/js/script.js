@@ -42,7 +42,11 @@ if (document.querySelector('.header')) {
             if (scrollPos + headerH >= wrapperPosition) {
                 header.classList.remove('fixed')
                 main.style.marginTop = `0px`
+                horizontalWrapper.classList.add('sticky')
+            } else{
+                horizontalWrapper.classList.remove('sticky')
             }
+            
         }
     })
 
@@ -58,19 +62,19 @@ AOS.init();
 
 
 
-document.addEventListener('DOMContentLoaded', () =>{
-    const modalSubmit = document.querySelector('#check-modal')
-    const overlay = document.querySelector('.overlay');
-    const modal = document.querySelector('.modal');
-    modal.classList.add('open');
-    overlay.classList.add('open')
-    document.body.classList.add('lock')
+// document.addEventListener('DOMContentLoaded', () =>{
+//     const modalSubmit = document.querySelector('#check-modal')
+//     const overlay = document.querySelector('.overlay');
+//     const modal = document.querySelector('.modal');
+//     modal.classList.add('open');
+//     overlay.classList.add('open')
+//     document.body.classList.add('lock')
 
-    modalSubmit.addEventListener('click', () =>{
-        modal.classList.remove('open')
-        overlay.classList.remove('open')
-        document.body.classList.remove('lock')
-    })
-})
+//     modalSubmit.addEventListener('click', () =>{
+//         modal.classList.remove('open')
+//         overlay.classList.remove('open')
+//         document.body.classList.remove('lock')
+//     })
+// })
 
 
