@@ -119,9 +119,26 @@
                 align-items: center;
                 .menu__item {
                     margin-right: 15px;
+                    position: relative;
                     &.active {
                         .menu__link {
                             color: $maincolor;
+                        }
+                    }
+                    &.open{
+                        .submenu-list{
+                            opacity: 1;
+                            visibility: visible;
+                            max-height: 100%;
+                            padding: 15px 0;
+                        }
+                    }
+                    @media (any-hover: hover) {
+                        &:hover {
+                            .submenu-list{
+                                opacity: 1;
+                                visibility: visible;
+                            }
                         }
                     }
                     .menu__link {
@@ -133,6 +150,63 @@
                             color: $maincolor;
                         }
                     }
+                    .submenu-list{
+                        opacity: 0;
+                        visibility: hidden;
+                        width: 200px;
+                        padding: 15px;
+                        transition: .3s;
+                        background-color: #fff;
+                        position: absolute;
+                        @media (max-width: $md2+px) {
+                            position: relative;
+                            max-height: 0;
+                            padding: 0;
+                        }
+                        .submenu-list__item {
+                            &:not(:last-child) {
+                                margin-bottom: 10px;
+                            }
+                            .submenu-list__link {
+                                font-size: 12px;
+                                color: #423831;
+                                @media (max-width: $md2+px) {
+                                    font-size: 14px;
+                                }
+                            }
+                            .small-list {
+                                padding: 0 15px;
+                                opacity: 0;
+                                visibility: hidden;
+                                max-height: 0;
+                                &.open{
+                                    opacity: 1;
+                                    visibility: visible;
+                                    max-height: 100%;
+                                    position: unset;
+                                }
+                                .small-list__item a{
+                                    font-size: 12px;
+                                    color: #423831;
+                                    @media (max-width: $md2+px) {
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                            @media (any-hover: hover) {
+                                &:hover {
+                                    .small-list {
+                                        opacity: 1;
+                                        visibility: visible;
+                                        max-height: 100%;
+                                        position: unset;
+                                    }
+                                }
+                            }
+                            
+                        }
+                    }
+                    
                 }
             }
         }

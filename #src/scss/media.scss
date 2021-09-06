@@ -157,6 +157,7 @@
                 transition: 0.3s;
                 &.active {
                     right: 0;
+                    overflow: scroll;
                 }
                 .navbar__menu {
                     display: block;

@@ -1,12 +1,19 @@
 .horizontal-wrapper {
-    margin-top: -75px;
+    margin-top: -78px;
+    @media (max-width: 890px) {
+        display: none;
+    }
     &__menu {
-        padding: 40px 0;
-        padding-left: 100px;
+        padding: 40px 100px;
+        @media (max-width: $md2+px) {
+            padding: 30px;
+        }
         .menu-list {
             display: flex;
             align-items: center;
-            gap: 70px;
+            :not(:last-child){
+                margin-right: 70px;
+            }
             &__item {
                 position: relative;
                 &.active {
@@ -19,6 +26,9 @@
                         bottom: -3px;
                         left: 0;
                         transition: 0.3s;
+                        @media (max-width: $md2+px) {
+                            display: none;
+                        }
                     }
                 }
                 .menu-list__link {
@@ -27,6 +37,7 @@
             }
         }
     }
+    
    &.sticky{
     position: sticky;
     z-index: 10000;
@@ -41,8 +52,15 @@
     justify-content: center;
     widows: 100%;
     height: 900px;
+    @media (max-width: 890px) {
+        height: 700px;
+    }
+    @media (max-width: $md3+px){
+        height: 550px;
+    }
     h2 {
-        font-size: 68px;
+        @include adaptiv-value('font-size', 68 , 48, 1);
+        text-align: center;
         line-height: 93px;
         color: #FFFFFF;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -52,23 +70,72 @@
 .technology-posts {
     max-width: 1300px;
     margin: 150px auto;
+    padding: 0 15px;    
     &__grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-column: 2 span;
         grid-gap: 200px 150px;
         place-items: center;
+        @media (max-width: $md2+px) {
+            grid-gap: 140px 50px;
+        }
+        @media (max-width: $md3+px) {
+            width: 70%;
+            margin: 0 auto;
+            grid-gap: 80px;
+        }
+        @media (max-width: 640px) {
+            width: 90%;
+        }
+        @media (max-width: $md4+px) {
+            width: 100%;
+        }
         .technology-post {
+            @media (max-width: $md3+px) {
+                grid-column: 2 span;
+            }
             &:nth-child(3n + 0) {
                 width: 80%;
                 grid-column: 2 span;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                @media (max-width: $md2+px) {
+                    flex-direction: column;
+                    width: 60%;
+                    img{
+                        height: 400px;
+                        object-fit: cover;
+                    }
+                }
+                @media (max-width: $md3+px) {
+                    flex-direction: column;
+                    width: 100%;
+                    img{
+                        height: 400px;
+                        object-fit: cover;
+                    }
+                }
                 .technology-post__content {
                     transform: translateX(-150px);
-                    margin-right: -150px;
+                    margin-top: -150px;
+                    @media (max-width: $md1+px) {
+                        min-width: 400px;
+                    }
+                    @media (max-width: $md2+px) {
+                        margin: 0 auto;
+                        transform: translateY(-100px);
+                        margin-bottom: -100px;
+                    }
+                    @media (max-width: 640px) {
+                        min-width: 90%;
+                    }
                 }
+                @media (max-width: $md3+px){
+                    display: block;
+                }
+
             }
             img {
                 width: 100%;
@@ -80,6 +147,9 @@
                 padding: 30px 17px;
                 transform: translateY(-100px);
                 margin-bottom: -100px;
+                @media (max-width: 640px) {
+                    padding: 15px;
+                }
                 h3 {
                     font-weight: 800;
                     color: #000000;
@@ -91,4 +161,20 @@
             }
         }
     }
+}
+
+
+.to-top{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(235, 231, 231);
+    border-radius: 100px;
+    img{
+        width: 30px;
+        height: 30px;
+    }
+
 }

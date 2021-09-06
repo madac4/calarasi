@@ -1,6 +1,9 @@
 @@include('slider.js', {});
 @@include('defaultSelect.js', {});
 
+window.__forceSmoothScrollPolyfill__ = true;
+
+
 if (document.querySelector('.language')) {
     const languageToggler = document.querySelector('.current-lang');
 
@@ -11,10 +14,12 @@ if (document.querySelector('.language')) {
 }
 
 if (document.querySelector('.header')) {
-    const header = document.querySelector('.header');
+    var header = document.querySelector('.header');
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.navbar');
     const main = document.querySelector('main');
+    const toTop = document.querySelector('.to-top');
+
 
     document.addEventListener('scroll', () => {
         const scrollPos = window.pageYOffset;
@@ -39,15 +44,21 @@ if (document.querySelector('.header')) {
         const horizontalWrapper = document.querySelector('.horizontal-wrapper');
         if (horizontalWrapper) {
             const wrapperPosition = horizontalWrapper.offsetTop
-            if (scrollPos + headerH >= wrapperPosition) {
+            if (scrollPos + headerH >= wrapperPosition + 100) {
                 header.classList.remove('fixed')
                 main.style.marginTop = `0px`
                 horizontalWrapper.classList.add('sticky')
-            } else{
+            } else {
                 horizontalWrapper.classList.remove('sticky')
             }
-            
+
         }
+
+        // if (document.documentElement.scrollTop <= headerH) {
+        //     toTop.style.display = "none"
+        // } else {
+        //     toTop.style.display = "block"
+        // }
     })
 
     burger.addEventListener('click', () => {
@@ -55,6 +66,12 @@ if (document.querySelector('.header')) {
         nav.classList.toggle('active');
         document.body.classList.toggle('lock');
     })
+
+
+
+    let options = { top: 0, left: 0, behavior: 'smooth' }; // left and top are coordinates
+    // toTop.addEventListener('click', () => { window.scroll(options) });
+
 }
 
 
@@ -77,4 +94,21 @@ AOS.init();
 //     })
 // })
 
-
+if ("ontouchstart" in document.documentElement){ 
+    const header = document.querySelector('.header')
+    if (header) {
+        const withMenu = header.querySelectorAll('.with-submenu');
+        const withSublist = header.querySelectorAll('.with-sublist');
+        withMenu.forEach(item =>{
+            item.querySelector('a').addEventListener('click', () =>{
+                item.classList.toggle('open');
+            });
+        })
+        withSublist.forEach(el =>{
+            el.querySelector('a').addEventListener('click', () =>{
+                el.querySelector('.small-list').classList.toggle('open');
+            });
+        })
+    }
+    
+}
